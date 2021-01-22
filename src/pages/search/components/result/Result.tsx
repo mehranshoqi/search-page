@@ -1,31 +1,22 @@
 import React, { Reducer, useEffect, useState } from "react";
 import ResultItem from "../resultItem/ResultItem";
 import { connect } from "react-redux";
-import { useStore } from "react-redux";
+import { Result, SearchState } from "../../../../store/types";
 
-const Result = ({ state }: any) => {
-  const data = [
-    { title: "mehran", link: "hhTTTTPPPP" },
-    { title: "mehran", link: "hhTTTTPPPP" },
-    { title: "mehran", link: "hhTTTTPPPP" },
-    { title: "mehran", link: "hhTTTTPPPP" },
-  ];
-  setTimeout(() => {
-    console.log(state, "4000");
-  }, 4000);
-
+const Results = ({ state }: any) => {
   return (
     <div className="result">
-      {state.result.map((res: any) => (
+      {state.result.map((res: Result) => (
         <ResultItem {...res} />
       ))}
     </div>
   );
 };
+
 const mapStateToProps = (state: any) => {
   return {
     state: state.searchReducer,
   };
 };
 
-export default connect(mapStateToProps)(Result);
+export default connect(mapStateToProps)(Results);

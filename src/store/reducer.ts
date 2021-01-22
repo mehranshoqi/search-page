@@ -4,7 +4,7 @@ import { createSelectorHook } from "react-redux";
 
 export const initialState: SearchState = {
   loadingStatus: false,
-  result: [1, 1, 44, 4, 4, 4, 3, 3, 4, 5, 6, 7, 3, 3, 4],
+  result: [],
 };
 
 const searchReducer = (
@@ -26,9 +26,3 @@ const searchReducer = (
 export default combineReducers({
   searchReducer: searchReducer,
 });
-
-type YourRootState = {
-  initial: SearchState;
-};
-
-export const useSelectorrr = createSelectorHook<YourRootState>();

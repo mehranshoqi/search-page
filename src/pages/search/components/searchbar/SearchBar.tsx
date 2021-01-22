@@ -3,12 +3,12 @@ import { fetchResultsAction } from "../../../../store/actions";
 import { useDispatch } from "react-redux";
 
 export default () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState<string>("");
   const dispatch = useDispatch();
   const fetchResults = (ev: any) => {
     setQuery(ev.target.value);
     if (!!query) {
-      dispatch(fetchResultsAction());
+      dispatch(fetchResultsAction(query));
     }
   };
   return (

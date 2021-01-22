@@ -1,11 +1,10 @@
-import React from "react";
 import { Result } from "../../../../store/types";
 
 const SearchItem = (result: Result) => {
   return (
     <div className="result_item">
-      {result.htmlTitle}
-      <a href="">link</a>
+      <a href={result.link}>{result.title}</a>
+      <p>{result.link}</p>
     </div>
   );
 };
