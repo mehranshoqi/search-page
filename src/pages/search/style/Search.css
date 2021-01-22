@@ -76,8 +76,6 @@
 }
 
 .search > div:last-child {
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+  height: 80%;
 }
 /*# sourceMappingURL=Search.css.map */

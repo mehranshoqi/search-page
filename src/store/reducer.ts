@@ -1,5 +1,10 @@
 import { combineReducers } from "redux";
-import { SearchActionsTypes, SET_SEARCH_RESULT, SearchState } from "./types";
+import {
+  SearchActionsTypes,
+  SET_SEARCH_RESULT,
+  SET_LOADING_STATUS,
+  SearchState,
+} from "./types";
 import { createSelectorHook } from "react-redux";
 
 export const initialState: SearchState = {
@@ -16,6 +21,12 @@ const searchReducer = (
       return {
         ...state,
         result: action.result,
+        loadingStatus: action.loadingStatus
+      };
+    case SET_LOADING_STATUS:
+      return {
+        ...state,
+        loadingStatus: action.loadingStatus,
       };
     default: {
       return state;

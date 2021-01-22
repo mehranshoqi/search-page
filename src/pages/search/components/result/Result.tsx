@@ -4,10 +4,11 @@ import { connect } from "react-redux";
 import { Result, SearchState } from "../../../../store/types";
 
 const Results = ({ state }: any) => {
+  const res = state.result ?? [];
   return (
     <div className="result">
-      {state.result.map((res: Result) => (
-        <ResultItem {...res} />
+      {res.map((config: Result) => (
+        <ResultItem {...config} />
       ))}
     </div>
   );

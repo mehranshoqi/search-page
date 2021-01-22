@@ -8,17 +8,19 @@ export interface Result {
 }
 //Action Types
 export const SET_SEARCH_RESULT = "SET_SEARCH_RESULT";
-export const FETCH_SEARCH_RESULT = "FETCH_SEARCH_RESULT";
+export const SET_LOADING_STATUS = "SET_LOADING_STATUS";
 
 interface SetSearchResultAction {
   type: typeof SET_SEARCH_RESULT;
   result: Array<Result>;
+  loadingStatus: boolean;
 }
-interface FetchSearchResult {
-  type: typeof FETCH_SEARCH_RESULT;
+interface SetLoadingStatusAction {
+  type: typeof SET_LOADING_STATUS;
+  loadingStatus: boolean;
 }
 
 export type SearchActionsTypes =
   | SetSearchResultAction
-  | FetchSearchResult
+  | SetLoadingStatusAction
   | any;
