@@ -2,7 +2,10 @@
 
 ## React - Redux - Typescript - SASS
 
-### responsive design
-
 ### Total time development ~ 6 h 45 min
 
+
+
+### responsive design
+
+https://i.postimg.cc/mD3TF42j/Screenshot-4.png?raw=true
