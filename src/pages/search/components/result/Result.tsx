@@ -1,7 +1,7 @@
-import React, { Reducer, useEffect, useState } from "react";
+import React from "react";
 import ResultItem from "../resultItem/ResultItem";
 import { connect } from "react-redux";
-import { Result, SearchState } from "../../../../store/types";
+import { Result } from "../../../../store/types";
 
 const Results = ({ state }: any) => {
   const res = state.result ?? [];

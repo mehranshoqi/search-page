@@ -9,7 +9,7 @@ const SearchItem = (result: Result) => {
         </a>
         <p>{result.link.split("/")[2]}</p>
       </div>
-      <p>{result.snippet.slice(0, 40)} desc</p>
+      <p>{result.snippet.slice(0, result.snippet.length / 5)} desc</p>
     </div>
   );
 };

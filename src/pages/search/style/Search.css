@@ -96,6 +96,19 @@
   padding: 0 8px;
   -webkit-animation: title 2.9s 1;
           animation: title 2.9s 1;
+  letter-spacing: .4px;
+}
+
+@media (max-width: 576px) {
+  .search_bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .result_item {
@@ -129,6 +142,12 @@
   padding: 4px 0;
   font-size: 14px;
   color: grey;
+}
+
+@media (max-width: 576px) {
+  .result_item {
+    width: 88%;
+  }
 }
 
 .search {

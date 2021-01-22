@@ -4,12 +4,14 @@ import {
   SET_SEARCH_RESULT,
   SET_LOADING_STATUS,
   SearchState,
+  SET_MESSAGE,
+  LodingStatus,
 } from "./types";
-import { createSelectorHook } from "react-redux";
 
 export const initialState: SearchState = {
-  loadingStatus: false,
+  loadingStatus: LodingStatus.freeze,
   result: [],
+  message: "",
 };
 
 const searchReducer = (
@@ -26,6 +28,12 @@ const searchReducer = (
     case SET_LOADING_STATUS:
       return {
         ...state,
+        loadingStatus: action.loadingStatus,
+      };
+    case SET_MESSAGE:
+      return {
+        ...state,
+        message: action.message,
         loadingStatus: action.loadingStatus,
       };
     default: {

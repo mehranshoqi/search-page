@@ -1,5 +1,5 @@
 .result_item {
-  border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+  border-bottom: solid 1px rgba(128, 128, 128, 0.08);
   width: 60%;
   height: 100px;
   display: -webkit-box;
@@ -26,8 +26,14 @@
 }
 
 .result_item > p {
-  padding: px 0;
+  padding: 4px 0;
   font-size: 14px;
   color: grey;
+}
+
+@media (max-width: 576px) {
+  .result_item {
+    width: 88%;
+  }
 }
 /*# sourceMappingURL=ResultItem.css.map */
