@@ -2,5 +2,12 @@
   border-bottom: solid 1px grey;
   width: 60%;
   height: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=ResultItem.css.map */

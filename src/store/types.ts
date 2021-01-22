@@ -3,6 +3,11 @@ export interface SearchState {
   result: Array<any>;
 }
 
+export interface Result {
+  htmlTitle?: any;
+  link?: any;
+}
+
 //Action Types
 export const SET_SEARCH_RESULT = "SET_SEARCH_RESULT";
 export const FETCH_SEARCH_RESULT = "FETCH_SEARCH_RESULT";

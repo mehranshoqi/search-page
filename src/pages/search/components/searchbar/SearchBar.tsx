@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./style/SearchBar.css";
 import { fetchResultsAction } from "../../../../store/actions";
 import { useDispatch } from "react-redux";
 

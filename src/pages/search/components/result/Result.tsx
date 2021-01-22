@@ -1,5 +1,4 @@
 import React, { Reducer, useEffect, useState } from "react";
-import "./style/Result.css";
 import ResultItem from "../resultItem/ResultItem";
 import { connect } from "react-redux";
 import { useStore } from "react-redux";
@@ -18,7 +17,7 @@ const Result = ({ state }: any) => {
   return (
     <div className="result">
       {state.result.map((res: any) => (
-        <ResultItem />  
+        <ResultItem {...res} />
       ))}
     </div>
   );

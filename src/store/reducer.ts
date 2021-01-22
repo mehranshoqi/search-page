@@ -13,7 +13,6 @@ const searchReducer = (
 ): SearchState => {
   switch (action.type) {
     case SET_SEARCH_RESULT:
-      console.log(state);
       return {
         ...state,
         result: action.result,

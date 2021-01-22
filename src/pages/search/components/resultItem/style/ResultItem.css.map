@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACP,aAAa,EAAE,cAAc;EAC7B,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,EAAE;CAAG",
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACP,aAAa,EAAE,cAAc;EAC7B,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,EAAE;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAAG",
     "sources": [
         "ResultItem.sass"
     ],
