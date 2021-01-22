@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./style/Search.css";
-import { SearchBar } from "./components";
-import {store} from '../../index';
+import { SearchBar, Result } from "./components";
 
 export default () => {
-  console.log(store.getState())
   return (
     <div className="search">
       <SearchBar />
-      <div>results</div>
+      <Result />
     </div>
   );
 };

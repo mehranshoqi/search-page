@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./style/SearchBar.css";
-import { store } from "../../../../index";
 import { fetchResultsAction } from "../../../../store/actions";
+import { useDispatch } from "react-redux";
 
 export default () => {
   const [query, setQuery] = useState("");
+  const dispatch = useDispatch();
   const fetchResults = (ev: any) => {
     setQuery(ev.target.value);
     if (!!query) {
-      store.dispatch(fetchResultsAction());
+      dispatch(fetchResultsAction());
     }
   };
   return (
