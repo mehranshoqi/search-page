@@ -19,7 +19,7 @@ export default () => {
         dispatch({ type: SET_LOADING_STATUS, loadingStatus: true });
         const res = await axios
           .get(
-            `https://www.googleapis.com/customsearch/v1?key=AIzaSyDlw3xT-7QnMP9z_rW4gLnb-vn3QH0lUDY&cx=379d4204813f02a30&q=${query}`,
+            `https://www.googleapis.com/customsearch/v1?key=AIzaSyB7bkxluZMSAZ7b93AaHXn2IV5Ev35ekeo&cx=379d4204813f02a30&q=${query}`,
             { cancelToken: cancelToken.token }
           )
           .then((res: any) => {
@@ -37,8 +37,8 @@ export default () => {
   };
   return (
     <div className="search_bar">
-      <p>Search </p>
-      <input value={query} onChange={fetchResults} type="text" />
+      <h2>Google</h2>
+      <input value={query} onChange={fetchResults} type="text" placeholder="search in google.com" />
     </div>
   );
 };

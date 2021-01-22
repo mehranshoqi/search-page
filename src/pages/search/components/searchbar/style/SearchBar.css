@@ -1,3 +1,47 @@
+@-webkit-keyframes input {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes input {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes title {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .search_bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,13 +59,26 @@
 }
 
 .search_bar > input {
-  width: 50%;
-  height: 26%;
+  width: 70%;
+  height: 30%;
   margin: 0 8px 0 8px;
+  padding: 0 24px;
+  border: solid 1px rgba(128, 128, 128, 0.2);
+  border-radius: 18px;
+  -webkit-box-shadow: 4px 5px 24px -12px rgba(30, 30, 30, 0.1);
+          box-shadow: 4px 5px 24px -12px rgba(30, 30, 30, 0.1);
+  font-size: 16px;
+  -webkit-animation: input 2s 1;
+          animation: input 2s 1;
 }
 
-.search_bar > button {
-  width: 12%;
-  height: 26%;
+.search_bar > input:focus {
+  outline: none;
+}
+
+.search_bar > h2 {
+  padding: 0 8px;
+  -webkit-animation: title 2.9s 1;
+          animation: title 2.9s 1;
 }
 /*# sourceMappingURL=SearchBar.css.map */

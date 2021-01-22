@@ -1,11 +1,11 @@
 .result_item {
-  border: solid 1px grey;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.2);
   width: 60%;
-  height: 8%;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8px;
+  padding: 16px 8px 4px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13,5 +13,21 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.result_item > div:first-child > a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.result_item > div:first-child > p {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.result_item > p {
+  padding: px 0;
+  font-size: 14px;
+  color: grey;
 }
 /*# sourceMappingURL=ResultItem.css.map */

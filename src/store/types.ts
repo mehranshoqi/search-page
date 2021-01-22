@@ -4,6 +4,7 @@ export interface SearchState {
 }
 export interface Result {
   title: string;
+  snippet: string;
   link: string;
 }
 //Action Types

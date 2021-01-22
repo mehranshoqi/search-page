@@ -21,7 +21,7 @@ const searchReducer = (
       return {
         ...state,
         result: action.result,
-        loadingStatus: action.loadingStatus
+        loadingStatus: action.loadingStatus,
       };
     case SET_LOADING_STATUS:
       return {
