@@ -4,9 +4,7 @@
 
 ### Total time development ~ 6 h 45 min
 
-
-
 ### responsive design
 
-https://i.postimg.cc/mD3TF42j/Screenshot-4.png?raw=true<br>
-https://i.postimg.cc/k5FHQgK2/Screenshot-3.png
+![desktop](<https://github.com/mehranshoqi/images/blob/main/Screenshot%20(3).png?raw=true>) <br />
+![mobile](<https://github.com/mehranshoqi/images/blob/main/Screenshot%20(4).png?raw=true>) <br />
